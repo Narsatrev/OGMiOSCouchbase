@@ -1,0 +1,6 @@
+framework module Pods_CouchbaseOGMiOS_CouchbaseOGMiOSTests {
+  umbrella header "Pods-CouchbaseOGMiOS-CouchbaseOGMiOSTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

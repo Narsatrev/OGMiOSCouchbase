@@ -1,0 +1,690 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1474B4264F828C95FC754D3B /* Pods_CouchbaseOGMiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1E2BEB1E07057CF117BF391 /* Pods_CouchbaseOGMiOS.framework */; };
+		B7E7992D1EBEC97900DC6BC3 /* CouchbaseOGMiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7E799231EBEC97900DC6BC3 /* CouchbaseOGMiOS.framework */; };
+		B7E799321EBEC97900DC6BC3 /* CouchbaseOGMiOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E799311EBEC97900DC6BC3 /* CouchbaseOGMiOSTests.swift */; };
+		B7E799341EBEC97900DC6BC3 /* CouchbaseOGMiOS.h in Headers */ = {isa = PBXBuildFile; fileRef = B7E799261EBEC97900DC6BC3 /* CouchbaseOGMiOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B7E7993F1EBEC9BE00DC6BC3 /* AdminConexion.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E7993D1EBEC9BE00DC6BC3 /* AdminConexion.swift */; };
+		B7E799401EBEC9BE00DC6BC3 /* AdminPersistencia.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E7993E1EBEC9BE00DC6BC3 /* AdminPersistencia.swift */; };
+		B7E799421EBEC9CF00DC6BC3 /* Configuracion.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E799411EBEC9CF00DC6BC3 /* Configuracion.swift */; };
+		B7E799491EBEC9DD00DC6BC3 /* InterfazAdminConexion.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E799431EBEC9DD00DC6BC3 /* InterfazAdminConexion.swift */; };
+		B7E7994A1EBEC9DD00DC6BC3 /* InterfazAdminPersistencia.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E799441EBEC9DD00DC6BC3 /* InterfazAdminPersistencia.swift */; };
+		B7E7994B1EBEC9DD00DC6BC3 /* JsonSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E799451EBEC9DD00DC6BC3 /* JsonSerializer.swift */; };
+		B7E7994C1EBEC9DD00DC6BC3 /* LectorXML.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E799461EBEC9DD00DC6BC3 /* LectorXML.swift */; };
+		B7E7994D1EBEC9DD00DC6BC3 /* Mapeador.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E799471EBEC9DD00DC6BC3 /* Mapeador.swift */; };
+		B7E7994E1EBEC9DD00DC6BC3 /* PersistenciaDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E799481EBEC9DD00DC6BC3 /* PersistenciaDTO.swift */; };
+		B7E799621EBED89700DC6BC3 /* CouchbaseLite.h in Headers */ = {isa = PBXBuildFile; fileRef = B7E7995D1EBED66F00DC6BC3 /* CouchbaseLite.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B7E799641EBED8DE00DC6BC3 /* CBLManager.h in Headers */ = {isa = PBXBuildFile; fileRef = B7E799631EBED8DE00DC6BC3 /* CBLManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B7E799661EBED8FC00DC6BC3 /* CBLAttachment.h in Headers */ = {isa = PBXBuildFile; fileRef = B7E799651EBED8FC00DC6BC3 /* CBLAttachment.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B7E799681EBED8FE00DC6BC3 /* CBLAuthenticator.h in Headers */ = {isa = PBXBuildFile; fileRef = B7E799671EBED8FE00DC6BC3 /* CBLAuthenticator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B7E7996A1EBED90100DC6BC3 /* CBLAuthenticator+OpenID.h in Headers */ = {isa = PBXBuildFile; fileRef = B7E799691EBED90100DC6BC3 /* CBLAuthenticator+OpenID.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B7E7996C1EBED90300DC6BC3 /* CBLBase.h in Headers */ = {isa = PBXBuildFile; fileRef = B7E7996B1EBED90300DC6BC3 /* CBLBase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B7E7996E1EBED90800DC6BC3 /* CBLDatabase.h in Headers */ = {isa = PBXBuildFile; fileRef = B7E7996D1EBED90800DC6BC3 /* CBLDatabase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B7E799701EBED90B00DC6BC3 /* CBLDatabaseChange.h in Headers */ = {isa = PBXBuildFile; fileRef = B7E7996F1EBED90B00DC6BC3 /* CBLDatabaseChange.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B7E799721EBED90D00DC6BC3 /* CBLDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = B7E799711EBED90D00DC6BC3 /* CBLDocument.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B7E799741EBED90F00DC6BC3 /* CBLDynamicObject.h in Headers */ = {isa = PBXBuildFile; fileRef = B7E799731EBED90F00DC6BC3 /* CBLDynamicObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B7E799761EBED91200DC6BC3 /* CBLGeometry.h in Headers */ = {isa = PBXBuildFile; fileRef = B7E799751EBED91200DC6BC3 /* CBLGeometry.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B7E799781EBED91400DC6BC3 /* CBLJSON.h in Headers */ = {isa = PBXBuildFile; fileRef = B7E799771EBED91400DC6BC3 /* CBLJSON.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B7E7997A1EBED91700DC6BC3 /* CBLListener.h in Headers */ = {isa = PBXBuildFile; fileRef = B7E799791EBED91700DC6BC3 /* CBLListener.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B7E7997D1EBED91C00DC6BC3 /* CBLModel.h in Headers */ = {isa = PBXBuildFile; fileRef = B7E7997C1EBED91C00DC6BC3 /* CBLModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B7E7997F1EBED91F00DC6BC3 /* CBLModelFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = B7E7997E1EBED91F00DC6BC3 /* CBLModelFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B7E799811EBED92200DC6BC3 /* CBLQuery.h in Headers */ = {isa = PBXBuildFile; fileRef = B7E799801EBED92200DC6BC3 /* CBLQuery.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B7E799831EBED92400DC6BC3 /* CBLQuery+FullTextSearch.h in Headers */ = {isa = PBXBuildFile; fileRef = B7E799821EBED92400DC6BC3 /* CBLQuery+FullTextSearch.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B7E799851EBED92600DC6BC3 /* CBLQuery+Geo.h in Headers */ = {isa = PBXBuildFile; fileRef = B7E799841EBED92600DC6BC3 /* CBLQuery+Geo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B7E799871EBED92900DC6BC3 /* CBLQueryBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = B7E799861EBED92900DC6BC3 /* CBLQueryBuilder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B7E799891EBED92B00DC6BC3 /* CBLRegisterJSViewCompiler.h in Headers */ = {isa = PBXBuildFile; fileRef = B7E799881EBED92B00DC6BC3 /* CBLRegisterJSViewCompiler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B7E7998B1EBED92E00DC6BC3 /* CBLReplication.h in Headers */ = {isa = PBXBuildFile; fileRef = B7E7998A1EBED92E00DC6BC3 /* CBLReplication.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B7E7998D1EBED93100DC6BC3 /* CBLRevision.h in Headers */ = {isa = PBXBuildFile; fileRef = B7E7998C1EBED93100DC6BC3 /* CBLRevision.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B7E7998F1EBED93300DC6BC3 /* CBLUITableSource.h in Headers */ = {isa = PBXBuildFile; fileRef = B7E7998E1EBED93300DC6BC3 /* CBLUITableSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B7E799911EBED93600DC6BC3 /* CBLView.h in Headers */ = {isa = PBXBuildFile; fileRef = B7E799901EBED93600DC6BC3 /* CBLView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B7E799931EBED93800DC6BC3 /* CouchbaseLiteListener.h in Headers */ = {isa = PBXBuildFile; fileRef = B7E799921EBED93800DC6BC3 /* CouchbaseLiteListener.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D295BBF4D60744E78308D540 /* Pods_CouchbaseOGMiOS_CouchbaseOGMiOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 442D68F01D34D8EB5B3DD9D6 /* Pods_CouchbaseOGMiOS_CouchbaseOGMiOSTests.framework */; };
+		F07BA5D333EEDDC9C6D9E0AD /* Pods_CouchbaseOGMiOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD06F825106171A4D816ADD5 /* Pods_CouchbaseOGMiOSTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B7E7992E1EBEC97900DC6BC3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B7E7991A1EBEC97900DC6BC3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B7E799221EBEC97900DC6BC3;
+			remoteInfo = CouchbaseOGMiOS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		442D68F01D34D8EB5B3DD9D6 /* Pods_CouchbaseOGMiOS_CouchbaseOGMiOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CouchbaseOGMiOS_CouchbaseOGMiOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5611CCD0B02AB739F4B1FAF4 /* Pods-CouchbaseOGMiOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CouchbaseOGMiOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CouchbaseOGMiOS/Pods-CouchbaseOGMiOS.debug.xcconfig"; sourceTree = "<group>"; };
+		5F6055F1DDB07943C8502D4A /* Pods-CouchbaseOGMiOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CouchbaseOGMiOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CouchbaseOGMiOSTests/Pods-CouchbaseOGMiOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6173A0F24C3825C67BB6CD7A /* Pods-CouchbaseOGMiOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CouchbaseOGMiOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-CouchbaseOGMiOS/Pods-CouchbaseOGMiOS.release.xcconfig"; sourceTree = "<group>"; };
+		6F506434A7804A6DCB781C5C /* Pods-CouchbaseOGMiOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CouchbaseOGMiOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CouchbaseOGMiOSTests/Pods-CouchbaseOGMiOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		745405A70180B539352762CA /* Pods-CouchbaseOGMiOS-CouchbaseOGMiOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CouchbaseOGMiOS-CouchbaseOGMiOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CouchbaseOGMiOS-CouchbaseOGMiOSTests/Pods-CouchbaseOGMiOS-CouchbaseOGMiOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		B1E2BEB1E07057CF117BF391 /* Pods_CouchbaseOGMiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CouchbaseOGMiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7E799231EBEC97900DC6BC3 /* CouchbaseOGMiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CouchbaseOGMiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7E799261EBEC97900DC6BC3 /* CouchbaseOGMiOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CouchbaseOGMiOS.h; sourceTree = "<group>"; };
+		B7E799271EBEC97900DC6BC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B7E7992C1EBEC97900DC6BC3 /* CouchbaseOGMiOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CouchbaseOGMiOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7E799311EBEC97900DC6BC3 /* CouchbaseOGMiOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CouchbaseOGMiOSTests.swift; sourceTree = "<group>"; };
+		B7E799331EBEC97900DC6BC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B7E7993D1EBEC9BE00DC6BC3 /* AdminConexion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdminConexion.swift; sourceTree = "<group>"; };
+		B7E7993E1EBEC9BE00DC6BC3 /* AdminPersistencia.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdminPersistencia.swift; sourceTree = "<group>"; };
+		B7E799411EBEC9CF00DC6BC3 /* Configuracion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configuracion.swift; sourceTree = "<group>"; };
+		B7E799431EBEC9DD00DC6BC3 /* InterfazAdminConexion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InterfazAdminConexion.swift; sourceTree = "<group>"; };
+		B7E799441EBEC9DD00DC6BC3 /* InterfazAdminPersistencia.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InterfazAdminPersistencia.swift; sourceTree = "<group>"; };
+		B7E799451EBEC9DD00DC6BC3 /* JsonSerializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonSerializer.swift; sourceTree = "<group>"; };
+		B7E799461EBEC9DD00DC6BC3 /* LectorXML.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LectorXML.swift; sourceTree = "<group>"; };
+		B7E799471EBEC9DD00DC6BC3 /* Mapeador.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mapeador.swift; sourceTree = "<group>"; };
+		B7E799481EBEC9DD00DC6BC3 /* PersistenciaDTO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersistenciaDTO.swift; sourceTree = "<group>"; };
+		B7E7995A1EBED54500DC6BC3 /* CouchbaseLite.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CouchbaseLite.h; path = "Pods/couchbase-lite-ios/CouchbaseLite.framework/Headers/CouchbaseLite.h"; sourceTree = "<group>"; };
+		B7E7995D1EBED66F00DC6BC3 /* CouchbaseLite.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CouchbaseLite.h; path = "Pods/couchbase-lite-ios/CouchbaseLite.framework/Headers/CouchbaseLite.h"; sourceTree = "<group>"; };
+		B7E799631EBED8DE00DC6BC3 /* CBLManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CBLManager.h; path = "Pods/couchbase-lite-ios/CouchbaseLite.framework/Headers/CBLManager.h"; sourceTree = "<group>"; };
+		B7E799651EBED8FC00DC6BC3 /* CBLAttachment.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CBLAttachment.h; path = "Pods/couchbase-lite-ios/CouchbaseLite.framework/Headers/CBLAttachment.h"; sourceTree = "<group>"; };
+		B7E799671EBED8FE00DC6BC3 /* CBLAuthenticator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CBLAuthenticator.h; path = "Pods/couchbase-lite-ios/CouchbaseLite.framework/Headers/CBLAuthenticator.h"; sourceTree = "<group>"; };
+		B7E799691EBED90100DC6BC3 /* CBLAuthenticator+OpenID.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CBLAuthenticator+OpenID.h"; path = "Pods/couchbase-lite-ios/CouchbaseLite.framework/Headers/CBLAuthenticator+OpenID.h"; sourceTree = "<group>"; };
+		B7E7996B1EBED90300DC6BC3 /* CBLBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CBLBase.h; path = "Pods/couchbase-lite-ios/CouchbaseLite.framework/Headers/CBLBase.h"; sourceTree = "<group>"; };
+		B7E7996D1EBED90800DC6BC3 /* CBLDatabase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CBLDatabase.h; path = "Pods/couchbase-lite-ios/CouchbaseLite.framework/Headers/CBLDatabase.h"; sourceTree = "<group>"; };
+		B7E7996F1EBED90B00DC6BC3 /* CBLDatabaseChange.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CBLDatabaseChange.h; path = "Pods/couchbase-lite-ios/CouchbaseLite.framework/Headers/CBLDatabaseChange.h"; sourceTree = "<group>"; };
+		B7E799711EBED90D00DC6BC3 /* CBLDocument.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CBLDocument.h; path = "Pods/couchbase-lite-ios/CouchbaseLite.framework/Headers/CBLDocument.h"; sourceTree = "<group>"; };
+		B7E799731EBED90F00DC6BC3 /* CBLDynamicObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CBLDynamicObject.h; path = "Pods/couchbase-lite-ios/CouchbaseLite.framework/Headers/CBLDynamicObject.h"; sourceTree = "<group>"; };
+		B7E799751EBED91200DC6BC3 /* CBLGeometry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CBLGeometry.h; path = "Pods/couchbase-lite-ios/CouchbaseLite.framework/Headers/CBLGeometry.h"; sourceTree = "<group>"; };
+		B7E799771EBED91400DC6BC3 /* CBLJSON.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CBLJSON.h; path = "Pods/couchbase-lite-ios/CouchbaseLite.framework/Headers/CBLJSON.h"; sourceTree = "<group>"; };
+		B7E799791EBED91700DC6BC3 /* CBLListener.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CBLListener.h; path = "Pods/couchbase-lite-ios/CouchbaseLiteListener.framework/Headers/CBLListener.h"; sourceTree = "<group>"; };
+		B7E7997B1EBED91900DC6BC3 /* CBLManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CBLManager.h; path = "Pods/couchbase-lite-ios/CouchbaseLite.framework/Headers/CBLManager.h"; sourceTree = "<group>"; };
+		B7E7997C1EBED91C00DC6BC3 /* CBLModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CBLModel.h; path = "Pods/couchbase-lite-ios/CouchbaseLite.framework/Headers/CBLModel.h"; sourceTree = "<group>"; };
+		B7E7997E1EBED91F00DC6BC3 /* CBLModelFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CBLModelFactory.h; path = "Pods/couchbase-lite-ios/CouchbaseLite.framework/Headers/CBLModelFactory.h"; sourceTree = "<group>"; };
+		B7E799801EBED92200DC6BC3 /* CBLQuery.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CBLQuery.h; path = "Pods/couchbase-lite-ios/CouchbaseLite.framework/Headers/CBLQuery.h"; sourceTree = "<group>"; };
+		B7E799821EBED92400DC6BC3 /* CBLQuery+FullTextSearch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CBLQuery+FullTextSearch.h"; path = "Pods/couchbase-lite-ios/CouchbaseLite.framework/Headers/CBLQuery+FullTextSearch.h"; sourceTree = "<group>"; };
+		B7E799841EBED92600DC6BC3 /* CBLQuery+Geo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CBLQuery+Geo.h"; path = "Pods/couchbase-lite-ios/CouchbaseLite.framework/Headers/CBLQuery+Geo.h"; sourceTree = "<group>"; };
+		B7E799861EBED92900DC6BC3 /* CBLQueryBuilder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CBLQueryBuilder.h; path = "Pods/couchbase-lite-ios/CouchbaseLite.framework/Headers/CBLQueryBuilder.h"; sourceTree = "<group>"; };
+		B7E799881EBED92B00DC6BC3 /* CBLRegisterJSViewCompiler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CBLRegisterJSViewCompiler.h; path = "Pods/couchbase-lite-ios/Extras/CBLRegisterJSViewCompiler.h"; sourceTree = "<group>"; };
+		B7E7998A1EBED92E00DC6BC3 /* CBLReplication.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CBLReplication.h; path = "Pods/couchbase-lite-ios/CouchbaseLite.framework/Headers/CBLReplication.h"; sourceTree = "<group>"; };
+		B7E7998C1EBED93100DC6BC3 /* CBLRevision.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CBLRevision.h; path = "Pods/couchbase-lite-ios/CouchbaseLite.framework/Headers/CBLRevision.h"; sourceTree = "<group>"; };
+		B7E7998E1EBED93300DC6BC3 /* CBLUITableSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CBLUITableSource.h; path = "Pods/couchbase-lite-ios/CouchbaseLite.framework/Headers/CBLUITableSource.h"; sourceTree = "<group>"; };
+		B7E799901EBED93600DC6BC3 /* CBLView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CBLView.h; path = "Pods/couchbase-lite-ios/CouchbaseLite.framework/Headers/CBLView.h"; sourceTree = "<group>"; };
+		B7E799921EBED93800DC6BC3 /* CouchbaseLiteListener.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CouchbaseLiteListener.h; path = "Pods/couchbase-lite-ios/CouchbaseLiteListener.framework/Headers/CouchbaseLiteListener.h"; sourceTree = "<group>"; };
+		F31D22E1D3CAC5ADAAFFB308 /* Pods-CouchbaseOGMiOS-CouchbaseOGMiOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CouchbaseOGMiOS-CouchbaseOGMiOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CouchbaseOGMiOS-CouchbaseOGMiOSTests/Pods-CouchbaseOGMiOS-CouchbaseOGMiOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		FD06F825106171A4D816ADD5 /* Pods_CouchbaseOGMiOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CouchbaseOGMiOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B7E7991F1EBEC97900DC6BC3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1474B4264F828C95FC754D3B /* Pods_CouchbaseOGMiOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7E799291EBEC97900DC6BC3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7E7992D1EBEC97900DC6BC3 /* CouchbaseOGMiOS.framework in Frameworks */,
+				F07BA5D333EEDDC9C6D9E0AD /* Pods_CouchbaseOGMiOSTests.framework in Frameworks */,
+				D295BBF4D60744E78308D540 /* Pods_CouchbaseOGMiOS_CouchbaseOGMiOSTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ADB3FCB3634840396BC3EC0F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5611CCD0B02AB739F4B1FAF4 /* Pods-CouchbaseOGMiOS.debug.xcconfig */,
+				6173A0F24C3825C67BB6CD7A /* Pods-CouchbaseOGMiOS.release.xcconfig */,
+				5F6055F1DDB07943C8502D4A /* Pods-CouchbaseOGMiOSTests.debug.xcconfig */,
+				6F506434A7804A6DCB781C5C /* Pods-CouchbaseOGMiOSTests.release.xcconfig */,
+				F31D22E1D3CAC5ADAAFFB308 /* Pods-CouchbaseOGMiOS-CouchbaseOGMiOSTests.debug.xcconfig */,
+				745405A70180B539352762CA /* Pods-CouchbaseOGMiOS-CouchbaseOGMiOSTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B7E799191EBEC97900DC6BC3 = {
+			isa = PBXGroup;
+			children = (
+				B7E799921EBED93800DC6BC3 /* CouchbaseLiteListener.h */,
+				B7E799901EBED93600DC6BC3 /* CBLView.h */,
+				B7E7998E1EBED93300DC6BC3 /* CBLUITableSource.h */,
+				B7E7998C1EBED93100DC6BC3 /* CBLRevision.h */,
+				B7E7998A1EBED92E00DC6BC3 /* CBLReplication.h */,
+				B7E799881EBED92B00DC6BC3 /* CBLRegisterJSViewCompiler.h */,
+				B7E799861EBED92900DC6BC3 /* CBLQueryBuilder.h */,
+				B7E799841EBED92600DC6BC3 /* CBLQuery+Geo.h */,
+				B7E799821EBED92400DC6BC3 /* CBLQuery+FullTextSearch.h */,
+				B7E799801EBED92200DC6BC3 /* CBLQuery.h */,
+				B7E7997E1EBED91F00DC6BC3 /* CBLModelFactory.h */,
+				B7E7997C1EBED91C00DC6BC3 /* CBLModel.h */,
+				B7E7997B1EBED91900DC6BC3 /* CBLManager.h */,
+				B7E799791EBED91700DC6BC3 /* CBLListener.h */,
+				B7E799771EBED91400DC6BC3 /* CBLJSON.h */,
+				B7E799751EBED91200DC6BC3 /* CBLGeometry.h */,
+				B7E799731EBED90F00DC6BC3 /* CBLDynamicObject.h */,
+				B7E799711EBED90D00DC6BC3 /* CBLDocument.h */,
+				B7E7996F1EBED90B00DC6BC3 /* CBLDatabaseChange.h */,
+				B7E7996D1EBED90800DC6BC3 /* CBLDatabase.h */,
+				B7E7996B1EBED90300DC6BC3 /* CBLBase.h */,
+				B7E799691EBED90100DC6BC3 /* CBLAuthenticator+OpenID.h */,
+				B7E799671EBED8FE00DC6BC3 /* CBLAuthenticator.h */,
+				B7E799651EBED8FC00DC6BC3 /* CBLAttachment.h */,
+				B7E799631EBED8DE00DC6BC3 /* CBLManager.h */,
+				B7E7995D1EBED66F00DC6BC3 /* CouchbaseLite.h */,
+				B7E7995A1EBED54500DC6BC3 /* CouchbaseLite.h */,
+				B7E799251EBEC97900DC6BC3 /* CouchbaseOGMiOS */,
+				B7E799301EBEC97900DC6BC3 /* CouchbaseOGMiOSTests */,
+				B7E799241EBEC97900DC6BC3 /* Products */,
+				ADB3FCB3634840396BC3EC0F /* Pods */,
+				C2DE9831F8567E6D09C9ED4B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B7E799241EBEC97900DC6BC3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B7E799231EBEC97900DC6BC3 /* CouchbaseOGMiOS.framework */,
+				B7E7992C1EBEC97900DC6BC3 /* CouchbaseOGMiOSTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B7E799251EBEC97900DC6BC3 /* CouchbaseOGMiOS */ = {
+			isa = PBXGroup;
+			children = (
+				B7E799431EBEC9DD00DC6BC3 /* InterfazAdminConexion.swift */,
+				B7E799441EBEC9DD00DC6BC3 /* InterfazAdminPersistencia.swift */,
+				B7E799451EBEC9DD00DC6BC3 /* JsonSerializer.swift */,
+				B7E799461EBEC9DD00DC6BC3 /* LectorXML.swift */,
+				B7E799471EBEC9DD00DC6BC3 /* Mapeador.swift */,
+				B7E799481EBEC9DD00DC6BC3 /* PersistenciaDTO.swift */,
+				B7E799411EBEC9CF00DC6BC3 /* Configuracion.swift */,
+				B7E7993D1EBEC9BE00DC6BC3 /* AdminConexion.swift */,
+				B7E7993E1EBEC9BE00DC6BC3 /* AdminPersistencia.swift */,
+				B7E799261EBEC97900DC6BC3 /* CouchbaseOGMiOS.h */,
+				B7E799271EBEC97900DC6BC3 /* Info.plist */,
+			);
+			path = CouchbaseOGMiOS;
+			sourceTree = "<group>";
+		};
+		B7E799301EBEC97900DC6BC3 /* CouchbaseOGMiOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				B7E799311EBEC97900DC6BC3 /* CouchbaseOGMiOSTests.swift */,
+				B7E799331EBEC97900DC6BC3 /* Info.plist */,
+			);
+			path = CouchbaseOGMiOSTests;
+			sourceTree = "<group>";
+		};
+		C2DE9831F8567E6D09C9ED4B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B1E2BEB1E07057CF117BF391 /* Pods_CouchbaseOGMiOS.framework */,
+				FD06F825106171A4D816ADD5 /* Pods_CouchbaseOGMiOSTests.framework */,
+				442D68F01D34D8EB5B3DD9D6 /* Pods_CouchbaseOGMiOS_CouchbaseOGMiOSTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		B7E799201EBEC97900DC6BC3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7E799341EBEC97900DC6BC3 /* CouchbaseOGMiOS.h in Headers */,
+				B7E799621EBED89700DC6BC3 /* CouchbaseLite.h in Headers */,
+				B7E7996E1EBED90800DC6BC3 /* CBLDatabase.h in Headers */,
+				B7E799811EBED92200DC6BC3 /* CBLQuery.h in Headers */,
+				B7E799701EBED90B00DC6BC3 /* CBLDatabaseChange.h in Headers */,
+				B7E799831EBED92400DC6BC3 /* CBLQuery+FullTextSearch.h in Headers */,
+				B7E799851EBED92600DC6BC3 /* CBLQuery+Geo.h in Headers */,
+				B7E7998D1EBED93100DC6BC3 /* CBLRevision.h in Headers */,
+				B7E799871EBED92900DC6BC3 /* CBLQueryBuilder.h in Headers */,
+				B7E7998F1EBED93300DC6BC3 /* CBLUITableSource.h in Headers */,
+				B7E799911EBED93600DC6BC3 /* CBLView.h in Headers */,
+				B7E7998B1EBED92E00DC6BC3 /* CBLReplication.h in Headers */,
+				B7E799931EBED93800DC6BC3 /* CouchbaseLiteListener.h in Headers */,
+				B7E799761EBED91200DC6BC3 /* CBLGeometry.h in Headers */,
+				B7E7997F1EBED91F00DC6BC3 /* CBLModelFactory.h in Headers */,
+				B7E799891EBED92B00DC6BC3 /* CBLRegisterJSViewCompiler.h in Headers */,
+				B7E7997A1EBED91700DC6BC3 /* CBLListener.h in Headers */,
+				B7E799781EBED91400DC6BC3 /* CBLJSON.h in Headers */,
+				B7E799641EBED8DE00DC6BC3 /* CBLManager.h in Headers */,
+				B7E7997D1EBED91C00DC6BC3 /* CBLModel.h in Headers */,
+				B7E799741EBED90F00DC6BC3 /* CBLDynamicObject.h in Headers */,
+				B7E799721EBED90D00DC6BC3 /* CBLDocument.h in Headers */,
+				B7E799661EBED8FC00DC6BC3 /* CBLAttachment.h in Headers */,
+				B7E7996A1EBED90100DC6BC3 /* CBLAuthenticator+OpenID.h in Headers */,
+				B7E7996C1EBED90300DC6BC3 /* CBLBase.h in Headers */,
+				B7E799681EBED8FE00DC6BC3 /* CBLAuthenticator.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		B7E799221EBEC97900DC6BC3 /* CouchbaseOGMiOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B7E799371EBEC97900DC6BC3 /* Build configuration list for PBXNativeTarget "CouchbaseOGMiOS" */;
+			buildPhases = (
+				AC8BE8E773AC804D30501D8B /* [CP] Check Pods Manifest.lock */,
+				B7E7991E1EBEC97900DC6BC3 /* Sources */,
+				B7E7991F1EBEC97900DC6BC3 /* Frameworks */,
+				B7E799201EBEC97900DC6BC3 /* Headers */,
+				B7E799211EBEC97900DC6BC3 /* Resources */,
+				EB118A3FCC8A4A6F68651A9D /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CouchbaseOGMiOS;
+			productName = CouchbaseOGMiOS;
+			productReference = B7E799231EBEC97900DC6BC3 /* CouchbaseOGMiOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B7E7992B1EBEC97900DC6BC3 /* CouchbaseOGMiOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B7E7993A1EBEC97900DC6BC3 /* Build configuration list for PBXNativeTarget "CouchbaseOGMiOSTests" */;
+			buildPhases = (
+				B531C2DBD9313DF1AED04652 /* [CP] Check Pods Manifest.lock */,
+				B7E799281EBEC97900DC6BC3 /* Sources */,
+				B7E799291EBEC97900DC6BC3 /* Frameworks */,
+				B7E7992A1EBEC97900DC6BC3 /* Resources */,
+				57813DAD0D741510A952742F /* [CP] Embed Pods Frameworks */,
+				BDB54AEF895BBFF7655A7FA6 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B7E7992F1EBEC97900DC6BC3 /* PBXTargetDependency */,
+			);
+			name = CouchbaseOGMiOSTests;
+			productName = CouchbaseOGMiOSTests;
+			productReference = B7E7992C1EBEC97900DC6BC3 /* CouchbaseOGMiOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B7E7991A1EBEC97900DC6BC3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = Versatran;
+				TargetAttributes = {
+					B7E799221EBEC97900DC6BC3 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 6UQ4R6Z493;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
+					};
+					B7E7992B1EBEC97900DC6BC3 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = B7E7991D1EBEC97900DC6BC3 /* Build configuration list for PBXProject "CouchbaseOGMiOS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B7E799191EBEC97900DC6BC3;
+			productRefGroup = B7E799241EBEC97900DC6BC3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B7E799221EBEC97900DC6BC3 /* CouchbaseOGMiOS */,
+				B7E7992B1EBEC97900DC6BC3 /* CouchbaseOGMiOSTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B7E799211EBEC97900DC6BC3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7E7992A1EBEC97900DC6BC3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		57813DAD0D741510A952742F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CouchbaseOGMiOS-CouchbaseOGMiOSTests/Pods-CouchbaseOGMiOS-CouchbaseOGMiOSTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AC8BE8E773AC804D30501D8B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B531C2DBD9313DF1AED04652 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BDB54AEF895BBFF7655A7FA6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CouchbaseOGMiOS-CouchbaseOGMiOSTests/Pods-CouchbaseOGMiOS-CouchbaseOGMiOSTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EB118A3FCC8A4A6F68651A9D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CouchbaseOGMiOS/Pods-CouchbaseOGMiOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B7E7991E1EBEC97900DC6BC3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7E7993F1EBEC9BE00DC6BC3 /* AdminConexion.swift in Sources */,
+				B7E7994C1EBEC9DD00DC6BC3 /* LectorXML.swift in Sources */,
+				B7E7994D1EBEC9DD00DC6BC3 /* Mapeador.swift in Sources */,
+				B7E799491EBEC9DD00DC6BC3 /* InterfazAdminConexion.swift in Sources */,
+				B7E7994A1EBEC9DD00DC6BC3 /* InterfazAdminPersistencia.swift in Sources */,
+				B7E799421EBEC9CF00DC6BC3 /* Configuracion.swift in Sources */,
+				B7E799401EBEC9BE00DC6BC3 /* AdminPersistencia.swift in Sources */,
+				B7E7994B1EBEC9DD00DC6BC3 /* JsonSerializer.swift in Sources */,
+				B7E7994E1EBEC9DD00DC6BC3 /* PersistenciaDTO.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7E799281EBEC97900DC6BC3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7E799321EBEC97900DC6BC3 /* CouchbaseOGMiOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B7E7992F1EBEC97900DC6BC3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B7E799221EBEC97900DC6BC3 /* CouchbaseOGMiOS */;
+			targetProxy = B7E7992E1EBEC97900DC6BC3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		B7E799351EBEC97900DC6BC3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B7E799361EBEC97900DC6BC3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B7E799381EBEC97900DC6BC3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5611CCD0B02AB739F4B1FAF4 /* Pods-CouchbaseOGMiOS.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 6UQ4R6Z493;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = CouchbaseOGMiOS/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ArquitecturaSoftwareITESMCCM.CouchbaseOGMiOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		B7E799391EBEC97900DC6BC3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6173A0F24C3825C67BB6CD7A /* Pods-CouchbaseOGMiOS.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 6UQ4R6Z493;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = CouchbaseOGMiOS/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ArquitecturaSoftwareITESMCCM.CouchbaseOGMiOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		B7E7993B1EBEC97900DC6BC3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F31D22E1D3CAC5ADAAFFB308 /* Pods-CouchbaseOGMiOS-CouchbaseOGMiOSTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = CouchbaseOGMiOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ArquitecturaSoftwareITESMCCM.CouchbaseOGMiOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		B7E7993C1EBEC97900DC6BC3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 745405A70180B539352762CA /* Pods-CouchbaseOGMiOS-CouchbaseOGMiOSTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = CouchbaseOGMiOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ArquitecturaSoftwareITESMCCM.CouchbaseOGMiOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B7E7991D1EBEC97900DC6BC3 /* Build configuration list for PBXProject "CouchbaseOGMiOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7E799351EBEC97900DC6BC3 /* Debug */,
+				B7E799361EBEC97900DC6BC3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B7E799371EBEC97900DC6BC3 /* Build configuration list for PBXNativeTarget "CouchbaseOGMiOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7E799381EBEC97900DC6BC3 /* Debug */,
+				B7E799391EBEC97900DC6BC3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B7E7993A1EBEC97900DC6BC3 /* Build configuration list for PBXNativeTarget "CouchbaseOGMiOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7E7993B1EBEC97900DC6BC3 /* Debug */,
+				B7E7993C1EBEC97900DC6BC3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B7E7991A1EBEC97900DC6BC3 /* Project object */;
+}
